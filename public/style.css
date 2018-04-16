@@ -1,0 +1,190 @@
+
+/**
+ * Fix user-agent
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Canvas
+ */
+
+body{
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#container{
+  margin: 0px 25px;
+}
+
+.taulell-i-vaixells{
+  display: inline-block;
+}
+
+#vaixells-a-posar{
+  display: block;
+}
+
+taulell-jugador {
+  width: 436px;
+  border: 2px solid #333;
+  display: inline-block;
+  margin: 5px;
+  vertical-align: top;
+  background-image: url("assets/img/background.jpg");
+  background-color: #fff;
+  background-blend-mode: hard-light;
+}
+
+taulell-jugador[data-enemy-ready="false"] {
+  opacity: 0.5;
+}
+
+casella-taulell {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+  vertical-align: middle;
+  background-image: url(assets/img/background.jpg);
+  background-blend-mode: multiply;
+}
+
+casella-taulell[data-status="buit"]{
+  background-color: transparent;
+  background-image: none;
+}
+
+casella-taulell[data-status="aigua"]{
+  background-color: #77F;
+}
+
+casella-taulell[data-status="tocat"]{
+  background-color: #E77;
+  background-blend-mode: color-burn;
+}
+
+casella-taulell[data-status="enfonsat"]{
+  background-color: #D00;
+}
+
+casella-taulell[data-status="vaixell"]{
+  background-color: #0E0;
+}
+
+casella-taulell[data-status="atacat-enemic"]{
+  background-color: #ddd;
+}
+
+vaixell-jugador{
+  height: 50px;
+  border: 2px solid #000;
+  margin: 10px 0;
+  transform-origin: left center;
+}
+
+
+vaixell-jugador[data-width="2"]{
+  width: 100px;
+}
+
+vaixell-jugador[data-width="3"]{
+  width: 150px;
+}
+
+vaixell-jugador[data-width="4"]{
+  width: 200px;  
+}
+
+vaixell-jugador[data-status="posant"]{
+  display: block;
+  background-color: #333;
+}
+
+vaixell-jugador[data-status="no-posat"]{
+  display: block;
+}
+
+vaixell-jugador[data-status="posat"]{
+  display: none;
+}
+
+vaixell-jugador[data-orientation="horizontal"]{
+  transform: translate(10px, -25px);
+}
+
+vaixell-jugador[data-orientation="vertical"]{
+  transform: rotate(90deg) translate(-20px, -5px);
+}
+
+vaixell-jugador[data-orientation="diagonal-right"]{
+  transform: rotateZ(45deg) translate(-10px, -20px);
+}
+
+vaixell-jugador[data-orientation="diagonal-left"]{
+  transform: rotateZ(135deg) translate(-10px, 20px);
+}
+
+
+#chat {
+  border: 2px solid #000;
+  max-width: 300px;
+  width: 100%;
+  margin: 50px auto;
+  position: absolute;
+  padding: 10px;
+  top: 5px;
+  left: 100%;
+}
+
+#chat-messages {
+  width: 100%;
+  min-height: 50px;
+  max-height: 130px;
+  overflow-y: auto;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#chat-messages p {
+  margin: 5px 0;
+}
+
+#chat-controls {
+  position: relative;
+}
+
+#chat-controls textarea{
+  outline: none;
+  border: 2px solid #000;
+  display: inline-block;
+  width: 75%;
+  padding: 5px;
+  font-size: 1em;
+  height: 2.05em;
+}
+
+#chat-controls button {
+  outline: none;
+  border: 2px solid #000;
+  background-color: #fff;
+  width: 20%;
+  padding: 8px;
+  margin: 0 5px;
+  vertical-align: top;
+  display: inline-block;
+}

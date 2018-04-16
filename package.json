@@ -1,0 +1,19 @@
+{
+  "name": "tocat.io",
+  "version": "1.0.0",
+  "description": "A game using socket.io",
+  "main": "index.js",
+  "keywords": [
+    "socket.io",
+    "tocat"
+  ],
+  "dependencies": {
+    "express": "4.9.x",
+    "socket.io": "latest"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Patriciu Nista",
+  "license": "MIT"
+}
