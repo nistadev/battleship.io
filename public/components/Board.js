@@ -1,4 +1,4 @@
-class Board extends HTMLElement {
+export default class Board extends HTMLElement {
   constructor(){
     super();
     this.size = 8;

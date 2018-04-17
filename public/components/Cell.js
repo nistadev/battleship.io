@@ -1,4 +1,4 @@
-class Casella extends HTMLElement{
+export default class Casella extends HTMLElement {
   constructor(){
     super();
     this.addEventListener("click", this.fesAccio);

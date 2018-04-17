@@ -1,11 +1,11 @@
 {
-  "name": "tocat.io",
+  "name": "battleship.io",
   "version": "1.0.0",
-  "description": "A game using socket.io",
+  "description": "The classic Battleship arcade game with ES6 using Socket.io",
   "main": "index.js",
   "keywords": [
     "socket.io",
-    "tocat"
+    "battleship"
   ],
   "dependencies": {
     "express": "4.9.x",
@@ -13,6 +13,9 @@
   },
   "scripts": {
     "start": "node index"
+  },
+  "repository": {
+    "url": "https://github.com/patriciunista/battleship.io"
   },
   "author": "Patriciu Nista",
   "license": "MIT"

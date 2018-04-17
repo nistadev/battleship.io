@@ -1,4 +1,4 @@
-class Ship extends HTMLElement {
+export default class Ship extends HTMLElement {
 	constructor() {
 		super();
 		this.addEventListener("click", this.canviaEstat);
