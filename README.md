@@ -1,6 +1,6 @@
 # battleship.io
 
-The classic Battleship arcade game based on Socket.IO.
+The classic Battleship arcade game using Vue.js and Socket.IO.
 
 ## How to play
 
@@ -19,6 +19,7 @@ The **first player** that hits *"I'm ready"* button, starts shooting!
 
 ## TODO
 
+- [ ] Implement `Vue.js` for the frontend. *(Doing)*
 - [ ] Add status messages for players.
 - [ ] Responsive game design & improve UX.
 - [ ] Use different files for each class and import them in the main file.
